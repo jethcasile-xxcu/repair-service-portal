@@ -1,0 +1,158 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    color: #222;
+}
+
+/* Main Container */
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f4e79;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Section Headings */
+h2 {
+    color: #1f4e79;
+    border-bottom: 2px solid #1f4e79;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #1f4e79;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f7fa;
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+/* Text Inputs, Dropdowns, and Textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Radio Buttons */
+.radio-group {
+    display: flex;
+    gap: 25px;
+    margin-top: 8px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Checkboxes */
+.checkbox-group {
+    margin-top: 8px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    margin: 8px 0;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    background-color: #1f4e79;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: #777;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-size: 14px;
+}
