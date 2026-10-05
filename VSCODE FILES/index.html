@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Repair Service Request</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Computer Repair Service</h1>
+            <p>Request professional repair and maintenance services for your device.</p>
+        </header>
+
+        <!-- Repair Services Table -->
+        <section>
+            <h2>Available Repair Services</h2>
+
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Estimated Price</th>
+                </tr>
+
+                <tr>
+                    <td>Hardware Repair</td>
+                    <td>Repair or replacement of damaged computer components.</td>
+                    <td>₱500+</td>
+                </tr>
+
+                <tr>
+                    <td>Operating System Installation</td>
+                    <td>Installation and setup of a new operating system.</td>
+                    <td>₱800+</td>
+                </tr>
+
+                <tr>
+                    <td>Virus & Malware Removal</td>
+                    <td>Detection and removal of harmful software.</td>
+                    <td>₱600+</td>
+                </tr>
+
+                <tr>
+                    <td>Computer Cleaning</td>
+                    <td>Internal cleaning and basic performance maintenance.</td>
+                    <td>₱400+</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Service Request Form -->
+        <section>
+            <h2>Repair Service Request</h2>
+
+            <form>
+
+                <!-- Customer Name -->
+                <label for="name">Customer Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name" required>
+
+                <!-- Email Address -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="example@email.com" required>
+
+                <!-- Contact Number -->
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact"
+                       placeholder="09XXXXXXXXX" required>
+
+                <!-- Device Type -->
+                <label for="device">Device Type:</label>
+                <select id="device" name="device" required>
+                    <option value="">-- Select Device --</option>
+                    <option value="desktop">Desktop Computer</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="tablet">Tablet</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <!-- Preferred Service -->
+                <label for="service">Preferred Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">-- Select Service --</option>
+                    <option value="hardware">Hardware Repair</option>
+                    <option value="os">Operating System Installation</option>
+                    <option value="virus">Virus & Malware Removal</option>
+                    <option value="cleaning">Computer Cleaning</option>
+                </select>
+
+                <!-- Service Priority -->
+                <label>Service Priority:</label>
+
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="priority" value="low" required>
+                        Low
+                    </label>
+
+                    <label>
+                        <input type="radio" name="priority" value="normal">
+                        Normal
+                    </label>
+
+                    <label>
+                        <input type="radio" name="priority" value="urgent">
+                        Urgent
+                    </label>
+                </div>
+
+                <!-- Additional Services -->
+                <label>Additional Services:</label>
+
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="additional" value="backup">
+                        Data Backup
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="additional" value="cleaning">
+                        System Cleaning
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="additional" value="optimization">
+                        Performance Optimization
+                    </label>
+                </div>
+
+                <!-- Preferred Date -->
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <!-- Problem Description -->
+                <label for="problem">Problem Description:</label>
+                <textarea id="problem" name="problem"
+                          rows="6"
+                          placeholder="Describe the problem with your computer..."></textarea>
+
+                <!-- Buttons -->
+                <div class="buttons">
+                    <button type="submit">Submit Request</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Computer Repair Service | All Rights Reserved</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
